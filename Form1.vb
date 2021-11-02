@@ -142,4 +142,10 @@
         Hasil = Val(txtHasil.Text)
         operasiHitung = True
     End Sub
+
+    Private Sub btnBackspace_Click(sender As Object, e As EventArgs) Handles btnBackspace.Click
+        If txtHasil.Text.Length <> 0 Then
+            txtHasil.Text = txtHasil.Text.Remove(txtHasil.Text.Length - 1)
+        End If
+    End Sub
 End Class

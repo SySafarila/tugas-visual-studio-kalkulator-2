@@ -40,6 +40,7 @@ Partial Class Form1
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btnC = New System.Windows.Forms.Button()
         Me.btnHasil = New System.Windows.Forms.Button()
+        Me.btnBackspace = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtHasil
@@ -202,11 +203,21 @@ Partial Class Form1
         Me.btnHasil.Text = "="
         Me.btnHasil.UseVisualStyleBackColor = True
         '
+        'btnBackspace
+        '
+        Me.btnBackspace.Location = New System.Drawing.Point(419, 68)
+        Me.btnBackspace.Name = "btnBackspace"
+        Me.btnBackspace.Size = New System.Drawing.Size(75, 23)
+        Me.btnBackspace.TabIndex = 18
+        Me.btnBackspace.Text = "<----"
+        Me.btnBackspace.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 187)
+        Me.ClientSize = New System.Drawing.Size(594, 313)
+        Me.Controls.Add(Me.btnBackspace)
         Me.Controls.Add(Me.btnHasil)
         Me.Controls.Add(Me.btnC)
         Me.Controls.Add(Me.btn0)
@@ -250,4 +261,5 @@ Partial Class Form1
     Friend WithEvents btn0 As Button
     Friend WithEvents btnC As Button
     Friend WithEvents btnHasil As Button
+    Friend WithEvents btnBackspace As Button
 End Class
